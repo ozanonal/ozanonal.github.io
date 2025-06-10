@@ -1,0 +1,142 @@
+<!-- Bu dosya bir HTML5 belgesi olduğunu bildiriyor. Tarayıcı bunu görünce HTML5 olarak işleyecek. -->
+<!DOCTYPE html>
+<html lang="tr"> <!-- HTML dili Türkçe olarak ayarlanmış. -->
+
+<head>
+    <!-- Sayfanın karakter setini belirtiyoruz. Türkçe karakterler (ç, ğ, ü vb.) düzgün görüntülenir. -->
+    <meta charset="UTF-8">
+
+    <!-- Sayfa mobil uyumlu olsun diye bu ayarı ekliyoruz. Mobil cihazlarda sayfa düzgün görüntülenir. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sayfanın sekmede gözüken başlığı (browser tab başlığı). -->
+    <title>Ozan Önal - Kişisel Site</title>
+
+    <!-- Google Fonts bağlantısı. Roboto yazı tipini kullanacağız (modern ve okunaklı). -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- style.css dosyamızı buraya bağlıyoruz. Sayfanın tüm görsel tasarımını burada yapacağız. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Sayfa içinde yumuşak geçiş efekti (smooth scroll). Menüye tıklayınca sayfa kayarak geçer. -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body> <!-- Sayfa içeriği burada başlar. -->
+
+    <!-- HEADER (ÜST KISIM) -->
+
+    <header>
+        <!-- Bu div üstte büyük arka plan resmi göstermek için kullanılır. -->
+        <div class="header-bg"></div>
+
+        <!-- HEADER MENÜ içeriği -->
+        <div class="header-content">
+            <!-- Solda gözüken logo veya isim -->
+            <div class="logo">Ozan ÖNAL</div>
+
+            <!-- Menü bağlantıları. Bu linklere tıklayınca sayfanın ilgili bölümlerine kayar. -->
+            <nav>
+                <a href="#home">ANASAYFA</a>
+                <a href="#about">HAKKIMDA</a>
+                <a href="#publications">YAYINLAR</a>
+                <a href="#ai">YAPAY ZEKA PROJELERİ</a>
+                <a href="#blog">BLOG</a>
+                <a href="#contact">İLETİŞİM</a>
+                <a href="#">ENGLISH</a> <!-- Şimdilik boş link. -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME (ANASAYFA BÖLÜMÜ) -->
+
+    <!-- Her bölüm için bir <section> etiketi kullanıyoruz. id özelliği menü ile bağlantılı. -->
+    <section id="home">
+        <main>
+            <!-- Profil fotoğrafı. images klasörünün içindeki ozan.jpg dosyası çağrılır. -->
+            <img src="images/ozan.jpg" alt="Profil Fotoğrafı" class="profile-pic">
+
+            <!-- Ana başlık -->
+            <h1>Ozan ÖNAL</h1>
+
+            <!-- Yatay çizgi (görsel amaçlı ayırıcı) -->
+            <hr>
+
+            <!-- Alt başlıklar (subtitle sınıfını CSS ile tasarlayacağız) -->
+            <p class="subtitle">Selçuk Üniversitesi, Bilgisayar Mühendisliği Doktora Öğrencisi</p>
+            <p class="subtitle">AI Teknik Komite Üyesi</p>
+            <p class="subtitle">Uzmanlık Alanları: Yapay Zeka, Görüntü İşleme, Doğal Dil İşleme, Veri Bilimi</p>
+        </main>
+    </section>
+
+    <!-- HAKKIMDA BÖLÜMÜ -->
+
+    <section id="about">
+        <h2>Hakkımda</h2>
+         <p>Makine öğrenmesi uzmanı ve doktora öğrencisiyim. Makine öğrenmesinin tüm alanlarında hem akademik hem de uygulamalı projeler geliştiriyorum.</p>
+
+         <p>Çalışmalarım, çeşitli sektör ve uygulama alanlarında yapay zeka çözümlerinin geliştirilmesi, değerlendirilmesi ve güvenilir şekilde uygulanmasına odaklanmaktadır. Akademik     araştırmalar ve gerçek dünya projeleri arasında köprü kurmayı hedefliyorum.</p>
+
+         <p>Model geliştirme, değerlendirme, optimizasyon ve standartlara uygun yapay zeka sistemleri oluşturma konularında deneyim sahibiyim. Yapay zekanın sorumlu ve etkin kullanımı temel önceliklerim arasındadır.</p>
+    </section>
+
+    <!-- YAYINLAR BÖLÜMÜ -->
+
+    <section id="publications">
+        <h2>Yayınlar</h2>
+        <ul>
+            <li>"https://erzurumbirikim.com.tr/haber/yapay_zekanin_bugunu_ve_yarini_-4681.html</li>
+            
+        </ul>
+  <section id="ai">
+  <h2>Yapay Zeka Projeleri</h2>
+  <ul>
+    <li><strong>Ev Fiyat Tahmini:</strong> Makine öğrenmesi algoritmaları kullanılarak farklı bölgelerdeki konutların fiyatlarının tahmin edilmesi. Regresyon modelleri, feature engineering ve hiperparametre optimizasyonu kullanıldı.</li>
+
+    <li><strong>Meme Kanseri Teşhisi:</strong> Görüntü işleme destekli modellerle mamografi görüntülerinden kanserli ve kanserli olmayan vakaların sınıflandırılması. Dengeleme teknikleri ve transfer learning uygulandı.</li>
+
+    <li><strong>Hisse Senedi Al-Sat Tahmini:</strong> BIST 100 üzerindeki verilerden destek-direnç analizi ve fiyat tahmini yaparak al-sat sinyalleri üreten yapay zeka destekli bir sistem geliştirildi.</li>
+
+    <li><strong>LLZO (Li₇La₃Zr₂O₁₂) İletkenlik Tahmini:</strong> Lityum iyon batarya katı elektrolitleri üzerinde deneysel verilerle oluşturulan özellikler kullanılarak farklı algoritmalarla iyonik iletkenlik tahmin modeli oluşturuldu.</li>
+
+    <li><strong>Veri Tabanlı Belge Sahteciliği Tespiti:</strong> Dokümanlardaki yapaylık ve tutarsızlıkları tespit eden, veri desenlerine göre çalışan sınıflandırıcı sistem.</li>
+
+    <li><strong>Sızma Testi Otomasyonu:</strong> Açık kaynak güvenlik araçlarının çıktılarıyla entegre çalışan, yapay zeka destekli zafiyet analizi ve raporlama aracı.</li>
+
+    <li><strong>Kurumsal Performans İzleme:</strong> Kurum içi süreç verilerini analiz ederek iş yükü dengesi, verimlilik ve kaynak tahsisi önerileri sunan bir denetim destek sistemi.</li>
+
+    <li><strong>Makine Öğrenmesi Eğitim Platformu:</strong> Başlangıç seviyesinden ileri düzeye kadar eğitim videoları, uygulamalı örnekler ve değerlendirme modülleri içeren çok aşamalı bir çevrim içi platform.</li>
+
+    <li><strong>Yapay Zeka Destekli Uzaktan Kimlik Doğrulama:</strong> Görüntü işleme ve yüz karşılaştırma algoritmalarını kullanarak kimlik belgesi ile canlı görüntü arasında eşleşme yapan sistem tasarımı.</li>
+
+    <li><strong>Hatalı Veriye Karşı Dayanıklı Modelleme:</strong> Eksik/veri gürültüsü içeren durumlarda dahi yüksek doğruluk sağlayan model yapılarının geliştirilmesi.</li>
+  </ul>
+</section>
+    <!-- BLOG BÖLÜMÜ -->
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Yakında kişisel blog yazılarımı burada paylaşacağım.</p>
+    </section>
+
+    <!-- İLETİŞİM BÖLÜMÜ -->
+
+    <section id="contact">
+        <h2>İletişim</h2>
+        <p>Email: ozan_onal_@outlook.com</p>
+        <p>Kurumsal Email: ie_ozano@tse.org.tr</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ozanonal" target="_blank">linkedin.com/in/ozanonal</a></p>
+    </section>
+
+    <!-- ALT BİLGİ (FOOTER) -->
+
+    <footer>
+        <p>© 2025 Ozan Önal - Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>

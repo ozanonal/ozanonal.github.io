@@ -1,0 +1,129 @@
+/* GENEL SAYFA AYARLARI */
+
+body {
+    margin: 0; /* Sayfanın kenar boşluklarını sıfırlıyoruz. */
+    padding: 0; /* Sayfanın iç boşluklarını sıfırlıyoruz. */
+    font-family: 'Roboto', sans-serif; /* Google Fonts'tan Roboto yazı tipini kullanıyoruz. Modern ve okunaklı. */
+    background-color: #f9f9f9; /* Tüm sayfanın arka plan rengi (açık gri / beyaza yakın). */
+    text-align: center; /* Tüm içerik ortalanacak. */
+    color: #333; /* Yazının temel rengi (koyu gri - göz yormayan). */
+}
+
+/* HEADER - ÜST BÖLÜM - ARKA PLAN GÖRSELİ */
+
+.header-bg {
+    background-image: url('images/header-bg.jpg'); /* Üstte gözükecek arka plan resmi. */
+    background-size: cover; /* Resim, bulunduğu alanı kaplayacak şekilde ayarlanır. */
+    background-position: center; /* Resmin ortası her zaman görünür. */
+    height: 200px; /* Header arka plan yüksekliği (200px). */
+}
+
+/* HEADER İÇERİĞİ (MENÜ KISMI) */
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Menü arka planı siyah ve %70 şeffaf. */
+    color: white; /* Menüdeki yazı rengi beyaz. */
+    display: flex; /* Flexbox kullanıyoruz → menü ve logo yan yana gelir. */
+    justify-content: space-between; /* Logo sola, menü sağa yaslanır. */
+    align-items: center; /* Dikey hizalama ortalanır. */
+    padding: 10px 50px; /* İç boşluk (üst-alt 10px, sağ-sol 50px). */
+    position: sticky; /* Sayfa kaydırıldığında bu header sabit kalır. */
+    top: 0; /* Sayfanın en üstünde yapışık başlar. */
+    z-index: 1000; /* Diğer elementlerin üzerinde görünmesi için yüksek z-index veriyoruz. */
+}
+
+/* LOGO YAZISI */
+
+.header-content .logo {
+    font-weight: bold; /* Kalın yazı. */
+    font-size: 20px; /* Yazı boyutu. */
+    color: #f06; /* Pembe renk (senin referans verdiğin örnekten esinlendim). */
+}
+
+/* MENÜDEKİ LİNKLER */
+
+.header-content nav a {
+    color: white; /* Menü linkleri beyaz renkte. */
+    text-decoration: none; /* Linklerin alt çizgisini kaldırıyoruz. */
+    margin: 0 10px; /* Sağ ve soldan 10px boşluk bırakıyoruz. */
+    font-weight: bold; /* Linkler kalın yazılıyor. */
+}
+
+/* MENÜDEKİ LİNKLERİN ÜZERİNE GELİNCE (HOVER) RENGİNİ DEĞİŞTİRMEK */
+
+.header-content nav a:hover {
+    color: #f06; /* Üzerine gelince pembe renk oluyor. */
+}
+
+/* ANASAYFA İÇERİĞİ */
+
+main {
+    padding: 50px 20px; /* Üst-alt 50px, sağ-sol 20px iç boşluk. */
+}
+
+/* PROFİL FOTOĞRAFI (DAİRE VE GÖLGE EKLEMEK) */
+
+.profile-pic {
+    width: 200px; /* Fotoğraf genişliği. */
+    height: 200px; /* Fotoğraf yüksekliği. */
+    object-fit: cover; /* Fotoğrafı tam dolduracak şekilde kırpar (bozulma olmaz). */
+    border-radius: 50%; /* %50 → daire yapar. */
+    border: 5px solid white; /* Beyaz kenarlık. */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Hafif siyah gölge efekti. */
+    margin-top: -100px; /* Profil fotoğrafını biraz yukarı taşır → header arka planına girer. */
+    margin-bottom: 20px; /* Alt boşluk bırakır. */
+}
+
+/* ANA BAŞLIK (İSMİN YAZDIĞI YER) */
+
+main h1 {
+    font-size: 32px; /* Büyük yazı boyutu. */
+    font-weight: bold; /* Kalın yazı. */
+    margin: 10px 0; /* Üst-alt 10px boşluk. */
+}
+
+/* ALT BAŞLIKLAR (Örneğin "Selçuk Üniversitesi..." gibi) */
+
+.subtitle {
+    font-size: 16px; /* Yazı boyutu. */
+    margin: 5px 0; /* Üst-alt 5px boşluk. */
+    font-weight: bold; /* Kalın yazı. */
+}
+
+/* BÖLÜMLER (Hakkımda, Yayınlar, Projeler vb.) */
+
+section {
+    padding: 40px 20px; /* Bölümlerin iç boşluğu. */
+    max-width: 800px; /* Bölümlerin maksimum genişliği. */
+    margin: auto; /* Ortalayacak şekilde hizalama. */
+}
+
+/* LİSTE BİÇİMLENDİRME (Yayınlar ve Projelerde kullanıyoruz) */
+
+ul {
+    text-align: left; /* Liste sola yaslanır (daha okunabilir olur). */
+    display: inline-block; /* Listeyi ortada göstermek için blok şeklinde. */
+    margin: 20px 0; /* Üst-alt 20px boşluk. */
+}
+
+/* ALT BİLGİ (FOOTER) */
+
+footer {
+    background-color: #333; /* Koyu gri arka plan. */
+    color: white; /* Beyaz yazı. */
+    padding: 15px; /* İç boşluk. */
+    margin-top: 20px; /* Üstte biraz boşluk bırakır. */
+}
+
+/* MOBİL UYUM (600px altındaki ekranlar için özel ayar) */
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column; /* Menü ve logo alt alta gelir. */
+        text-align: center; /* İçerikler ortalanır. */
+    }
+
+    .header-content nav {
+        margin-top: 10px; /* Menü ile logo arasında boşluk bırakılır. */
+    }
+}
