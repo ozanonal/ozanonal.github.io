@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Makine Öğrenmesinin Gerçek Hayat Uygulamaları</title>
+    <title>Blog - Ozan Önal</title>
     <link rel="stylesheet" href="style.css" />
     <style>
         .container {
@@ -19,10 +19,24 @@
             margin-bottom: 10px;
         }
 
+        .container h3 {
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
         .container p {
             line-height: 1.6;
             margin-bottom: 15px;
             color: #333;
+        }
+
+        .post-date {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 15px;
+            display: block;
         }
     </style>
 </head>
@@ -44,29 +58,31 @@
 </header>
 
 <section class="container">
-    <h2>Makine Öğrenmesinin Gerçek Hayat Uygulamaları</h2>
-    <p><em>12 Haziran 2025</em></p>
+    <h2>Blog</h2>
 
-    <p>Makine öğrenmesi, son yıllarda teknolojik gelişmelerin en önemli sürükleyici güçlerinden biri haline geldi. Sadece teknoloji devleri değil, her ölçekten firma artık makine öğrenmesi modellerini kendi iş süreçlerine entegre etmeye başladı. Peki makine öğrenmesi günlük hayatımızda gerçekten nerelerde kullanılıyor?</p>
+    <!-- Blog yazısı 1 -->
+    <h3>Makine Öğrenmesinin Gerçek Hayat Uygulamaları</h3>
+    <span class="post-date">12 Haziran 2025</span>
+    <p>Makine öğrenmesi bugün finans, sağlık, üretim ve daha pek çok sektörde aktif olarak kullanılmaktadır. Bu yazıda farklı uygulama alanlarını ve bu teknolojinin hayatımıza nasıl dokunduğunu örneklerle anlattım.</p>
+    <p>Örneğin finans sektöründe dolandırıcılık tespiti için gelişmiş makine öğrenmesi modelleri kullanılmaktadır. Bankalar, milyonlarca işlem içerisinden olağan dışı aktiviteleri tespit edebilmekte ve gerçek zamanlı müdahaleler yapabilmektedir.</p>
+    <p>Sağlık alanında ise görüntü işleme ve makine öğrenmesi, MR ve röntgen gibi tıbbi görüntüler üzerinde kanserli hücreleri otomatik olarak tespit etmektedir. Bunun yanında kişisel sağlık verileri üzerinden bireye özel tedavi yaklaşımları da geliştirilmektedir.</p>
+    <p>Üretim sektöründe ise predictive maintenance (önleyici bakım) çalışmaları sayesinde makinelerin arızaları önceden tahmin edilmekte ve üretim kayıpları minimize edilmektedir.</p>
 
-    <p>Bu yazıda, farklı sektörlerde makine öğrenmesinin nasıl kullanıldığını ve gelecekte bu teknolojiden neler beklenebileceğini örneklerle ele alacağım.</p>
+    <!-- Blog yazısı 2 -->
+    <h3>Veri Temizlemenin Model Başarısına Etkisi</h3>
+    <span class="post-date">5 Haziran 2025</span>
+    <p>Veri hazırlama aşaması model başarısını doğrudan etkileyen en önemli aşamalardan biridir. Bu yazıda, veri temizleme süreçlerinde kullandığım en iyi pratikleri ve örnekleri paylaşıyorum.</p>
+    <p>İlk adım eksik verilerin doğru şekilde yönetilmesidir. Eksik değerleri doğru stratejiyle doldurmak ya da modelleme için uygun şekilde bırakmak büyük önem taşır.</p>
+    <p>İkinci önemli adım ise aykırı değerlerin belirlenmesidir. Outlier dediğimiz aykırı veriler, modelin genel performansını olumsuz etkileyebilir. Aykırı değerlerin tespiti ve gerektiğinde dönüştürülmesi ya da filtrelenmesi, model kalitesini artırır.</p>
+    <p>Son olarak kategorik değişkenlerin uygun şekilde kodlanması (one-hot encoding, label encoding gibi) da başarıyı ciddi oranda etkiler. Veri temizliği aşamasını doğru yönetmek, ileri aşamalarda model tuning ve optimizasyon sürecini de kolaylaştırır.</p>
 
-    <h3>1. Sağlık Sektöründe Kullanımı</h3>
-    <p>Sağlık sektöründe makine öğrenmesi, hastalık teşhisi ve hasta takibinde devrim yaratıyor. Görüntü işleme teknikleri sayesinde röntgen ve MR görüntülerinden kanserli hücrelerin otomatik tespiti mümkün hale geldi. Bunun yanı sıra, makine öğrenmesi sayesinde kişiselleştirilmiş tedavi planları da geliştiriliyor.</p>
-
-    <h3>2. Finans ve Bankacılıkta Kullanımı</h3>
-    <p>Finans sektörü makine öğrenmesinin en aktif kullanıldığı alanlardan biri. Risk analizi, dolandırıcılık tespiti, müşteri segmentasyonu gibi süreçler artık büyük oranda yapay zeka destekli yürütülüyor. Bankalar, müşterilerin davranışlarını analiz ederek daha kişiselleştirilmiş hizmetler sunabiliyor.</p>
-
-    <h3>3. E-Ticaret ve Pazarlama</h3>
-    <p>Bugün e-ticaret sitelerinde gördüğümüz kişisel öneri sistemlerinin temelinde makine öğrenmesi yatıyor. Kullanıcının önceki davranışlarına ve benzer kullanıcıların tercihine göre ürün önerileri yapılabiliyor. Ayrıca, reklam kampanyalarının optimizasyonunda da makine öğrenmesi büyük rol oynuyor.</p>
-
-    <h3>4. Üretim ve Endüstri 4.0</h3>
-    <p>Makine öğrenmesi, üretim süreçlerinin optimizasyonunda da yoğun şekilde kullanılıyor. Arızaların önceden tahmin edilmesi (predictive maintenance), kalite kontrol sistemleri ve üretim hattının otomasyonu gibi alanlarda bu teknolojiden faydalanılıyor.</p>
-
-    <h3>Sonuç</h3>
-    <p>Makine öğrenmesi artık hayatımızın her alanına nüfuz etmiş durumda. Bu teknoloji geliştikçe kullanım alanları daha da genişleyecek. Hem araştırma dünyasında hem de endüstride bu gelişmeleri takip etmek büyük önem taşıyor.</p>
-
-    <p>Gelecekte, yapay zeka ve makine öğrenmesinin daha da insana dokunan, etik ilkelere dayanan bir şekilde kullanılması gerektiğini unutmamalıyız.</p>
+    <!-- Blog yazısı 3 -->
+    <h3>Etik ve Güvenilir Yapay Zeka Kullanımı</h3>
+    <span class="post-date">25 Mayıs 2025</span>
+    <p>Yapay zeka sistemlerinin yaygınlaşmasıyla birlikte, bu teknolojilerin etik ve güvenilir şekilde kullanımı büyük önem kazandı. Bu yazımda sorumlu yapay zeka kullanımının temel ilkelerini ele aldım.</p>
+    <p>Öncelikli olarak veri gizliliği ve veri güvenliği her zaman öncelikli olmalıdır. Modeller eğitilirken kişisel verilerin anonimleştirilmesi ve ilgili yasal düzenlemelere uygun davranılması büyük önem taşır.</p>
+    <p>Ayrıca, yapay zeka sistemlerinin şeffaf olması gerekir. Modelin nasıl çalıştığı, hangi verilerden öğrenildiği ve hangi sınırlamalara sahip olduğu açık şekilde belirtilmelidir.</p>
+    <p>Son olarak önyargılı (bias) modellerden kaçınmak için eğitim verilerinin dengeli ve çeşitli olması sağlanmalıdır. Etik sorumluluk bilinciyle geliştirilen yapay zeka sistemleri, toplumda daha yüksek kabul görür ve daha güvenilir sonuçlar üretir.</p>
 </section>
 
 <footer>
