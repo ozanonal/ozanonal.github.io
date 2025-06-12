@@ -7,9 +7,6 @@
     <title>Ozan Önal - İletişim</title>
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Garantili Font Awesome (LinkedIn ikonu çalışacak) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-NpMo7hBJgWsklZhz+CIT7KOxCPHwVKJDohz0kuWyYUkJtqGHukbQ69vXhLo2mPYkhvDyOCdoZjcF77GUgd9duA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <style>
         html {
             scroll-behavior: smooth;
@@ -28,14 +25,17 @@
 
         .social-icons a {
             margin: 0 10px;
-            font-size: 50px;
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s;
+            display: inline-block;
+            transition: transform 0.3s;
         }
 
         .social-icons a:hover {
-            color: #0a66c2; /* LinkedIn rengi */
+            transform: scale(1.1);
+        }
+
+        .social-icons img {
+            width: 50px;
+            height: 50px;
         }
 
         .contact-email {
@@ -75,10 +75,10 @@
     <!-- E-posta (alt çizgisiz, tıklanabilir) -->
     <a href="mailto:ozan_onal_@outlook.com" class="contact-email">ozan_onal_@outlook.com</a>
 
-    <!-- LinkedIn ikonu (garantili şekilde çıkacak) -->
+    <!-- LinkedIn görsel ikonu -->
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/o-önal/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
+            <img src="images/linkedin.png" alt="LinkedIn" />
         </a>
     </div>
 </section>
