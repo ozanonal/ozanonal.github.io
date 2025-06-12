@@ -10,12 +10,39 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* Blog sayfası için container (sayfanın ortalanması ve sağ-sol boşluk için) */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* Blog başlık linkleri daha belirgin görünür */
+        .blog-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .blog-title:hover {
+            color: #f06; /* Üzerine gelince renk değişir */
+        }
+
+        /* Blog özet kısmı */
+        .blog-summary {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
     </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
     <div class="header-bg"></div>
     <div class="header-content">
@@ -30,38 +57,32 @@
     </div>
 </header>
 
-<!-- BLOG bölümü -->
-<section id="blog">
+<section id="blog" class="container">
     <h2>Blog</h2>
 
     <!-- Blog yazısı 1 -->
-    <article>
-        <h3>Makine Öğrenmesinin Gerçek Hayat Uygulamaları</h3>
+    <div class="blog-summary">
+        <a href="blog1.html" class="blog-title">Makine Öğrenmesinin Gerçek Hayat Uygulamaları</a>
         <p><em>12 Haziran 2025</em></p>
-        <p>Makine öğrenmesi bugün finans, sağlık, üretim ve daha pek çok sektörde aktif olarak kullanılmaktadır. Bu yazıda farklı uygulama alanlarını ele aldım ve bu teknolojinin hayatımıza nasıl dokunduğunu örneklerle anlattım.</p>
-    </article>
-
-    <hr>
+        <p>Makine öğrenmesi bugün finans, sağlık, üretim ve daha pek çok sektörde aktif olarak kullanılmaktadır. Bu yazıda farklı uygulama alanlarını ve bu teknolojinin hayatımıza nasıl dokunduğunu örneklerle anlattım.</p>
+    </div>
 
     <!-- Blog yazısı 2 -->
-    <article>
-        <h3>Veri Temizlemenin Model Başarısına Etkisi</h3>
+    <div class="blog-summary">
+        <a href="blog2.html" class="blog-title">Veri Temizlemenin Model Başarısına Etkisi</a>
         <p><em>5 Haziran 2025</em></p>
-        <p>Veri hazırlama aşaması genellikle model başarısını doğrudan etkileyen en önemli aşamadır. Bu yazıda, veri temizleme süreçlerinde kullandığım en iyi pratikleri ve örnekleri paylaşıyorum.</p>
-    </article>
-
-    <hr>
+        <p>Veri hazırlama aşaması model başarısını doğrudan etkileyen en önemli aşamalardan biridir. Bu yazıda, veri temizleme süreçlerinde kullandığım en iyi pratikleri ve örnekleri paylaşıyorum.</p>
+    </div>
 
     <!-- Blog yazısı 3 -->
-    <article>
-        <h3>Etik ve Güvenilir Yapay Zeka Kullanımı</h3>
+    <div class="blog-summary">
+        <a href="blog3.html" class="blog-title">Etik ve Güvenilir Yapay Zeka Kullanımı</a>
         <p><em>25 Mayıs 2025</em></p>
         <p>Yapay zeka sistemlerinin yaygınlaşmasıyla birlikte, bu teknolojilerin etik ve güvenilir şekilde kullanımı büyük önem kazandı. Bu yazımda sorumlu yapay zeka kullanımının temel ilkelerini ele aldım.</p>
-    </article>
+    </div>
 
 </section>
 
-<!-- FOOTER -->
 <footer>
     <p>© 2025 Ozan Önal - Tüm hakları saklıdır.</p>
 </footer>
