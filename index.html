@@ -1,23 +1,11 @@
-<!-- Bu sayfanın HTML5 standardında yazıldığını belirtiyoruz -->
 <!DOCTYPE html>
-
-<!-- Sayfanın dili Türkçe olarak ayarlanıyor -->
 <html lang="tr">
 
 <head>
-    <!-- Türkçe karakterlerin doğru görüntülenmesi için gerekli -->
     <meta charset="UTF-8" />
-
-    <!-- Sayfanın mobil cihazlarda da düzgün görüntülenmesi için gerekli -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Tarayıcı sekmesinde görünecek başlık -->
     <title>Ozan Önal - Hakkımda</title>
-
-    <!-- Harici stil dosyamızı (style.css) sayfaya bağlıyoruz -->
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Sayfa içindeki bağlantılar tıklandığında yumuşak geçiş yapılmasını sağlıyor -->
     <style>
         html {
             scroll-behavior: smooth;
@@ -27,54 +15,42 @@
 
 <body>
 
-<!-- HEADER kısmı başlıyor -->
+<!-- HEADER -->
 <header>
-
-    <!-- HEADER arka planı (images/header-bg.jpg görseli burada gösterilecek) -->
     <div class="header-bg"></div>
-
-    <!-- HEADER içeriği: Logo ve Menü -->
     <div class="header-content">
-
-        <!-- Sol üstte logo / ismin -->
         <div class="logo">Ozan ÖNAL</div>
-
-        <!-- Menü -->
         <nav>
-            <!-- Menü linkleri - farklı sayfalara yönlendirme yapıyor -->
             <a href="index.html">HAKKIMDA</a>
             <a href="publications.html">YAYINLAR</a>
             <a href="projects.html">PROJELER</a>
             <a href="blog.html">BLOG</a>
             <a href="contact.html">İLETİŞİM</a>
         </nav>
-
     </div>
 </header>
 
-<!-- Ana içerik kısmı: HAKKIMDA bölümü -->
+<!-- HAKKIMDA bölümü -->
 <section id="about">
 
-    <!-- Bölüm başlığı -->
     <h2>Hakkımda</h2>
 
-    <!-- Hakkında ilk paragraf -->
+    <!-- PROFİL FOTOĞRAF (daire şeklinde) -->
+    <img src="images/ozan.jpg" alt="Profil Fotoğrafı" class="profile-pic">
+
+    <!-- Hakkımda metni -->
     <p>Makine öğrenmesi uzmanı ve doktora öğrencisiyim. Makine öğrenmesinin tüm alanlarında hem akademik hem de uygulamalı projeler geliştiriyorum.</p>
 
-    <!-- İkinci paragraf -->
     <p>Çalışmalarım, çeşitli sektör ve uygulama alanlarında yapay zeka çözümlerinin geliştirilmesi, değerlendirilmesi ve güvenilir şekilde uygulanmasına odaklanmaktadır. Akademik araştırmalar ve gerçek dünya projeleri arasında köprü kurmayı hedefliyorum.</p>
 
-    <!-- Üçüncü paragraf -->
     <p>Model geliştirme, değerlendirme, optimizasyon ve standartlara uygun yapay zeka sistemleri oluşturma konularında deneyim sahibiyim. Yapay zekanın sorumlu ve etkin kullanımı temel önceliklerim arasındadır.</p>
 
 </section>
 
-<!-- ALT BİLGİ (FOOTER) kısmı -->
+<!-- FOOTER -->
 <footer>
-    <!-- Alt bilgi metni -->
     <p>© 2025 Ozan Önal - Tüm hakları saklıdır.</p>
 </footer>
 
 </body>
 </html>
-
