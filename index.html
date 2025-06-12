@@ -1,24 +1,23 @@
-<!-- Bu dosya bir HTML5 belgesi olduğunu bildiriyor. Tarayıcı bunu görünce HTML5 olarak işleyecek. -->
+<!-- Bu sayfanın HTML5 standardında yazıldığını belirtiyoruz -->
 <!DOCTYPE html>
-<html lang="tr"> <!-- HTML dili Türkçe olarak ayarlanmış. -->
+
+<!-- Sayfanın dili Türkçe olarak ayarlanıyor -->
+<html lang="tr">
 
 <head>
-    <!-- Sayfanın karakter setini belirtiyoruz. Türkçe karakterler (ç, ğ, ü vb.) düzgün görüntülenir. -->
-    <meta charset="UTF-8">
+    <!-- Türkçe karakterlerin doğru görüntülenmesi için gerekli -->
+    <meta charset="UTF-8" />
 
-    <!-- Sayfa mobil uyumlu olsun diye bu ayarı ekliyoruz. Mobil cihazlarda sayfa düzgün görüntülenir. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sayfanın mobil cihazlarda da düzgün görüntülenmesi için gerekli -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Sayfanın sekmede gözüken başlığı (browser tab başlığı). -->
-    <title>Ozan Önal - Kişisel Site</title>
+    <!-- Tarayıcı sekmesinde görünecek başlık -->
+    <title>Ozan Önal - Hakkımda</title>
 
-    <!-- Google Fonts bağlantısı. Roboto yazı tipini kullanacağız (modern ve okunaklı). -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Harici stil dosyamızı (style.css) sayfaya bağlıyoruz -->
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- style.css dosyamızı buraya bağlıyoruz. Sayfanın tüm görsel tasarımını burada yapacağız. -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Sayfa içinde yumuşak geçiş efekti (smooth scroll). Menüye tıklayınca sayfa kayarak geçer. -->
+    <!-- Sayfa içindeki bağlantılar tıklandığında yumuşak geçiş yapılmasını sağlıyor -->
     <style>
         html {
             scroll-behavior: smooth;
@@ -26,119 +25,56 @@
     </style>
 </head>
 
-<body> <!-- Sayfa içeriği burada başlar. -->
+<body>
 
-    <!-- HEADER (ÜST KISIM) -->
+<!-- HEADER kısmı başlıyor -->
+<header>
 
-    <header>
-        <!-- Bu div üstte büyük arka plan resmi göstermek için kullanılır. -->
-        <div class="header-bg"></div>
+    <!-- HEADER arka planı (images/header-bg.jpg görseli burada gösterilecek) -->
+    <div class="header-bg"></div>
 
-        <!-- HEADER MENÜ içeriği -->
-        <div class="header-content">
-            <!-- Solda gözüken logo veya isim -->
-            <div class="logo">Ozan ÖNAL</div>
+    <!-- HEADER içeriği: Logo ve Menü -->
+    <div class="header-content">
 
-            <!-- Menü bağlantıları. Bu linklere tıklayınca sayfanın ilgili bölümlerine kayar. -->
-            <nav>
-                <a href="#home">ANASAYFA</a>
-                <a href="#about">HAKKIMDA</a>
-                <a href="#publications">YAYINLAR</a>
-                <a href="#ai">YAPAY ZEKA PROJELERİ</a>
-                <a href="#blog">BLOG</a>
-                <a href="#contact">İLETİŞİM</a>
-                <a href="#">ENGLISH</a> <!-- Şimdilik boş link. -->
-            </nav>
-        </div>
-    </header>
+        <!-- Sol üstte logo / ismin -->
+        <div class="logo">Ozan ÖNAL</div>
 
-    <!-- HOME (ANASAYFA BÖLÜMÜ) -->
+        <!-- Menü -->
+        <nav>
+            <!-- Menü linkleri - farklı sayfalara yönlendirme yapıyor -->
+            <a href="index.html">HAKKIMDA</a>
+            <a href="publications.html">YAYINLAR</a>
+            <a href="projects.html">PROJELER</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contact.html">İLETİŞİM</a>
+        </nav>
 
-    <!-- Her bölüm için bir <section> etiketi kullanıyoruz. id özelliği menü ile bağlantılı. -->
-    <section id="home">
-        <main>
-            <!-- Profil fotoğrafı. images klasörünün içindeki ozan.jpg dosyası çağrılır. -->
-            <img src="images/ozan.jpg" alt="Profil Fotoğrafı" class="profile-pic">
+    </div>
+</header>
 
-            <!-- Ana başlık -->
-            <h1>Ozan ÖNAL</h1>
+<!-- Ana içerik kısmı: HAKKIMDA bölümü -->
+<section id="about">
 
-            <!-- Yatay çizgi (görsel amaçlı ayırıcı) -->
-            <hr>
+    <!-- Bölüm başlığı -->
+    <h2>Hakkımda</h2>
 
-            <!-- Alt başlıklar (subtitle sınıfını CSS ile tasarlayacağız) -->
-            <p class="subtitle">Makine Öğrenimi Mühendisi</p>
-            <p class="subtitle">Yapay Zeka Teknik Komite Üyesi, Doktora Öğrencisi</p>
-            <p class="subtitle">Uzmanlık Alanları: Yapay Zeka, Makine Öğrenmesi, Görüntü İşleme, Doğal Dil İşleme, Veri Bilimi</p>
-        </main>
-    </section>
+    <!-- Hakkında ilk paragraf -->
+    <p>Makine öğrenmesi uzmanı ve doktora öğrencisiyim. Makine öğrenmesinin tüm alanlarında hem akademik hem de uygulamalı projeler geliştiriyorum.</p>
 
-    <!-- HAKKIMDA BÖLÜMÜ -->
+    <!-- İkinci paragraf -->
+    <p>Çalışmalarım, çeşitli sektör ve uygulama alanlarında yapay zeka çözümlerinin geliştirilmesi, değerlendirilmesi ve güvenilir şekilde uygulanmasına odaklanmaktadır. Akademik araştırmalar ve gerçek dünya projeleri arasında köprü kurmayı hedefliyorum.</p>
 
-    <section id="about">
-        <h2>Hakkımda</h2>
-         <p>Makine öğrenmesi uzmanı ve doktora öğrencisiyim. Makine öğrenmesinin tüm alanlarında hem akademik hem de uygulamalı projeler geliştirmekteyim. </p>
+    <!-- Üçüncü paragraf -->
+    <p>Model geliştirme, değerlendirme, optimizasyon ve standartlara uygun yapay zeka sistemleri oluşturma konularında deneyim sahibiyim. Yapay zekanın sorumlu ve etkin kullanımı temel önceliklerim arasındadır.</p>
 
-         <p>Çalışmalarım, çeşitli sektör ve uygulama alanlarında yapay zeka çözümlerinin geliştirilmesi, değerlendirilmesi ve güvenilir şekilde uygulanmasına odaklanmaktadır. Akademik     araştırmalar ve gerçek dünya projeleri arasında köprü kurmayı hedefliyorum.</p>
-
-         <p>Model geliştirme, değerlendirme, optimizasyon ve standartlara uygun yapay zeka sistemleri oluşturma konularında deneyim sahibiyim. Yapay zekanın sorumlu ve etkin kullanımı hakkında çalışmalar yapmaktayım.</p>
-    </section>
-
-    <!-- YAYINLAR BÖLÜMÜ -->
-
-    <section id="publications">
-    <h2>Yayınlar</h2>
-    <ul>
-        <li><a href="https://erzurumbirikim.com.tr/haber/yapay_zekanin_bugunu_ve_yarini_-4681.html" target="_blank">Yapay Zekanın Bugünü ve Yarını — Erzurum Birikim</a></li>
-        <li><a href="https://tez.yok.gov.tr/UlusalTezMerkezi/tezDetay.jsp?id=AVz9_f-hVXgPvrXz68Mw9Q&no=SdF2HDX97qo3M161Goqf7g" target="_blank">Fe-28%Ni-x%Ti alaşımlarında Ti elementinin bazı fiziksel özellikler üzerine etkisi - Tez</a></li>
-        <li><a href="https://turcmos.com/wp-content/uploads/2017/09/Turcmos2017-AbstractBook-29-Agustos.pdf" target="_blank">TURCMOS 2017- Bildiri</a></li>
-        <li><a href="https://turanazerbaycan.com/yapay-zeka-ile-iklim-krizine-cozum/" target="_blank">Yapay Zeka ile İklim Krizine Çözüm - Turan Azerbaycan</a></li>
-        <li><a href="https://turanazerbaycan.com/turan-recepoglu-sordu-ozan-onal-cevapladi/" target="_blank">Turan Recepoglu Sordu Ozan Önal Cevapladı</a></li>
-        <li><a href="https://www.bilisimdergisi.org.tr/bilisim-dergisi-sayi-196" target="_blank">Bilişim Dergisi — Sayı 196</a></li>
-    </ul>
 </section>
-  <h2>Yapay Zeka Projeleri</h2>
-  <ul>
-    <li><strong>Ev Fiyat Tahmini:</strong> Makine öğrenmesi algoritmaları kullanılarak farklı bölgelerdeki konutların fiyatlarının tahmin edilmesi. Regresyon modelleri, feature engineering ve hiperparametre optimizasyonu kullanıldı.</li>
 
-    <li><strong>Meme Kanseri Teşhisi:</strong> Görüntü işleme destekli modellerle mamografi görüntülerinden kanserli ve kanserli olmayan vakaların sınıflandırılması. Dengeleme teknikleri ve transfer learning uygulandı.</li>
-
-    <li><strong>Hisse Senedi Al-Sat Tahmini:</strong> BIST 100 üzerindeki verilerden destek-direnç analizi ve fiyat tahmini yaparak al-sat sinyalleri üreten yapay zeka destekli bir sistem geliştirildi.</li>
-
-    <li><strong>LLZO (Li₇La₃Zr₂O₁₂) İletkenlik Tahmini:</strong> Lityum iyon batarya katı elektrolitleri üzerinde deneysel verilerle oluşturulan özellikler kullanılarak farklı algoritmalarla iyonik iletkenlik tahmin modeli oluşturuldu.</li>
-
-    <li><strong>Veri Tabanlı Belge Sahteciliği Tespiti:</strong> Dokümanlardaki yapaylık ve tutarsızlıkları tespit eden, veri desenlerine göre çalışan sınıflandırıcı sistem.</li>
-
-    <li><strong>Sızma Testi Otomasyonu:</strong> Açık kaynak güvenlik araçlarının çıktılarıyla entegre çalışan, yapay zeka destekli zafiyet analizi ve raporlama aracı.</li>
-
-    <li><strong>Kurumsal Performans İzleme:</strong> Kurum içi süreç verilerini analiz ederek iş yükü dengesi, verimlilik ve kaynak tahsisi önerileri sunan bir denetim destek sistemi.</li>
-
-    <li><strong>Yapay Zeka Destekli Uzaktan Kimlik Doğrulama:</strong> Görüntü işleme ve yüz karşılaştırma algoritmalarını kullanarak kimlik belgesi ile canlı görüntü arasında eşleşme yapan sistem tasarımı.</li>
-
-    <li><strong>Hatalı Veriye Karşı Dayanıklı Modelleme:</strong> Eksik/veri gürültüsü içeren durumlarda dahi yüksek doğruluk sağlayan model yapılarının geliştirilmesi.</li>
-  </ul>
-</section>
-    <!-- BLOG BÖLÜMÜ -->
-
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Yakında kişisel blog yazılarımı burada paylaşacağım.</p>
-    </section>
-
-    <!-- İLETİŞİM BÖLÜMÜ -->
-
-    <section id="contact">
-        <h2>İletişim</h2>
-        <p>Email: <a href="mailto:ozan_onal_@outlook.com">ozan_onal_@outlook.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/o-önal/" target="_blank">linkedin.com/in/o-önal</a></p>
-    </section>
-
-
-    <!-- ALT BİLGİ (FOOTER) -->
-
-    <footer>
-        <p>© 2025 Ozan Önal - Tüm hakları saklıdır.</p>
-    </footer>
+<!-- ALT BİLGİ (FOOTER) kısmı -->
+<footer>
+    <!-- Alt bilgi metni -->
+    <p>© 2025 Ozan Önal - Tüm hakları saklıdır.</p>
+</footer>
 
 </body>
 </html>
+
