@@ -7,8 +7,8 @@
     <title>Ozan Önal - İletişim</title>
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Font Awesome ikonları için bağlantı -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome garantili CDN linki -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-NpMo7hBJgWsklZhz+CIT7KOxCPHwVKJDohz0kuWyYUkJtqGHukbQ69vXhLo2mPYkhvDyOCdoZjcF77GUgd9duA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         html {
@@ -28,14 +28,14 @@
 
         .social-icons a {
             margin: 0 10px;
-            font-size: 40px;
+            font-size: 50px;
             color: #333;
             text-decoration: none;
             transition: color 0.3s;
         }
 
         .social-icons a:hover {
-            color: #f06; /* Üzerine gelince renk değişir */
+            color: #0a66c2;
         }
 
         .contact-email {
@@ -43,6 +43,12 @@
             margin-bottom: 20px;
             display: block;
             color: #333;
+            text-decoration: none; /* ALT ÇİZGİ YOK */
+        }
+
+        .contact-email:hover {
+            color: #f06;
+            text-decoration: none; /* Hover'da da alt çizgi gelmesin */
         }
     </style>
 </head>
@@ -66,10 +72,10 @@
 <section class="container">
     <h2>İletişim</h2>
 
-    <!-- Tıklanabilir e-posta -->
+    <!-- E-posta (ALT ÇİZGİSİZ) -->
     <a href="mailto:ozan_onal_@outlook.com" class="contact-email">ozan_onal_@outlook.com</a>
 
-    <!-- Sosyal medya ikonları -->
+    <!-- Sadece LinkedIn ikonu -->
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/o-önal/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
